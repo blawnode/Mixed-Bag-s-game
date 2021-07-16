@@ -437,12 +437,12 @@ MonoBehaviour:
   - {fileID: 649756405}
   - {fileID: 1216282869}
   - {fileID: 1152681894}
-  waitingForNextSpawn: 5
-  theCountdown: 5
-  xMin: 0
-  xMax: 0
-  yMin: 0
-  yMax: 0
+  waitingForNextSpawn: 3
+  theCountdown: 3
+  xMin: -20
+  xMax: 20
+  yMin: -20
+  yMax: 20
 --- !u!1 &1216282869
 GameObject:
   m_ObjectHideFlags: 0

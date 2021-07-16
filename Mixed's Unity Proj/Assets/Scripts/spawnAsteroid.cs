@@ -52,8 +52,8 @@ public class spawnAsteroid : MonoBehaviour
 
         GameObject newGoods = (GameObject)Instantiate(goodsPrefab, pos, transform.rotation);
 
-        newGoods.GetComponent<Rigidbody>().AddForce(Random.Range(-10,10), Random.Range(-10, 10), 0);
-        newGoods.transform.Rotate(0, 0, 50 * Time.deltaTime);
+        newGoods.GetComponent<Rigidbody>().AddForce(Random.Range(-20,20), Random.Range(-20, 20), 0);
+        newGoods.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(0, 0, Random.Range(0, 360)));
 
         // If I wanted to get the result of instantiate and fiddle with it, I might do this instead:
         //GameObject newGoods = (GameObject)Instantiate(goodsPrefab, pos)
