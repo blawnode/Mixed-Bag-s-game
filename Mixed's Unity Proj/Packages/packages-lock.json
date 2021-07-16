@@ -169,10 +169,12 @@
       }
     },
     "io.tinu.asepriteimporter": {
-      "version": "file:C:/Users/magshimim/Documents/Unity-Related/unity-aseprite-importer-master",
+      "version": "file:C:/Users/magshimim/Documents/Unity-Related/unity-aseprite-importer-1.0.4",
       "depth": 0,
       "source": "local",
-      "dependencies": {}
+      "dependencies": {
+        "com.unity.2d.sprite": "1.0.0"
+      }
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
