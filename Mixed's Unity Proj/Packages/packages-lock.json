@@ -168,6 +168,12 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "io.tinu.asepriteimporter": {
+      "version": "file:C:/Users/magshimim/Documents/Unity-Related/unity-aseprite-importer-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
