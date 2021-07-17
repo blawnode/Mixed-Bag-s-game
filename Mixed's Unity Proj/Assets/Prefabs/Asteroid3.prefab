@@ -170,8 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b084228c58e244f8e80716129056e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2d: {fileID: 5117363886407529145}
   minRotationSpeed: 5
   maxRotationSpeed: 180
   minMovementSpeed: 2
   maxMovementSpeed: 6
-  rb2d: {fileID: 5117363886407529145}
+  value: 36

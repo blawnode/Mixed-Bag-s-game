@@ -11,6 +11,9 @@ public class Spawnable : MonoBehaviour
     private float rotationSpeed, movementSpeed;
     private Vector2 movementDirection;
 
+    [SerializeField] private float value;
+    public float Value { get { return value; } }
+
     public void ShootTowards(Vector3 position)
     {
         movementDirection = (position - transform.position).normalized;
