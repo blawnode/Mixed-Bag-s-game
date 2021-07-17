@@ -41,14 +41,16 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D c2d)
     {
-        if (c2d.CompareTag("smallAsteroid"))
-            batterySlider.value = Mathf.Max(batterySlider.value - 10f / 100f, 0);
-        else if (c2d.CompareTag("medAsteroid"))
-            batterySlider.value = Mathf.Max(batterySlider.value - 20f / 100f, 0);
-        else if (c2d.CompareTag("largeAsteroid"))
-            batterySlider.value = Mathf.Max(batterySlider.value - 30f / 100f, 0);
-        else if (c2d.CompareTag("Battery"))
-            batterySlider.value = Mathf.Max(batterySlider.value + 100f / 100f, 1);
+        Spawnable spawnable = c2d.GetComponent<Spawnable>();
+        if (!spawnable)
+            return;
+
+        float value = spawnable.Value;
+
+        if(c2d.CompareTag("Asteroid"))
+            batterySlider.value = Mathf.Max(batterySlider.value - value / 100f, 0);
+        else if(c2d.CompareTag("Battery"))
+            batterySlider.value = Mathf.Max(batterySlider.value + value / 100f, 1);
     }
 
 }
