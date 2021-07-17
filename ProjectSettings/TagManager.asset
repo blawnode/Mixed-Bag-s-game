@@ -9,6 +9,7 @@ TagManager:
   - largeAsteroid
   - Battery
   - playArea
+  - Asteroid
   layers:
   - Default
   - TransparentFX
