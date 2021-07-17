@@ -29,11 +29,6 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Player camera
-        float rawX = Input.GetAxisRaw("Horizontal");
-        float rawY = Input.GetAxisRaw("Vertical");
-        playerCamera.UpdateOffset(new Vector2(rawX == 0f ? 0f : Mathf.Sign(rawX), rawY == 0f ? 0f : Mathf.Sign(rawY)));
-
         // Player movement
         Vector3 movement = new Vector3(speed.x * Input.GetAxis("Horizontal"), speed.y * Input.GetAxis("Vertical"), 0) * Time.fixedDeltaTime;
         transform.Translate(movement);
