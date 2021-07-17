@@ -14,6 +14,7 @@ public class FuelManager : MonoBehaviour
 
     private void Update()
     {
+
         if (Time.time > nextActionTime)  // https://answers.unity.com/questions/17131/execute-code-every-x-seconds-with-update.html
         {
             nextActionTime += period;
@@ -24,8 +25,20 @@ public class FuelManager : MonoBehaviour
         if (fuelSlider.value == 0)
         {
             print("*death*");
-            // TODO: Send message to end game
+            // TODO: Send message to end game.
         }
+
+        if (Player.impact > 0)
+        {
+            fuelSlider.value = Mathf.Max(fuelSlider.value - Player.impact / 100f, 0);
+            Player.impact = 0;
+        }
+        if (Player.battery > 0)
+        {
+            fuelSlider.value = Mathf.Max(fuelSlider.value + Player.battery / 100f, 1);
+            Player.battery = 0;
+        }
+
     }
 
     public void GetFuel()

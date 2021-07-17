@@ -5,6 +5,9 @@ using System.Collections;
 
 public class spawnAsteroid : MonoBehaviour
 {
+
+
+
     //Array of objects to spawn (note I've removed the private goods variable)
     public GameObject[] theGoodies;
 
@@ -42,8 +45,23 @@ public class spawnAsteroid : MonoBehaviour
 
     void SpawnGoodies()
     {
+
+
+        Vector2 pos = new Vector2(0, 0);
+        float xThing = Random.Range(xMin, xMax);
+        float yThing = Random.Range(yMin, yMax);
+
+       // if (Mathf.Abs(xThing) <= 5) { xThing += (5 * Mathf.Sign(xThing)); }
+        if (Mathf.Abs(yThing) <= 5) { yThing += (5 * Mathf.Sign(yThing)); }
+
         // Defines the min and max ranges for x and y
-        Vector2 pos = new Vector2(Random.Range(xMin, xMax), Random.Range(yMin, yMax));
+
+
+        pos = new Vector2(xThing, yThing);
+        
+
+        Debug.Log(pos);
+       
 
         // Choose a new goods to spawn from the array (note I specifically call it a 'prefab' to avoid confusing myself!)
         GameObject goodsPrefab = theGoodies[Random.Range(0, theGoodies.Length)];
@@ -52,8 +70,9 @@ public class spawnAsteroid : MonoBehaviour
 
         GameObject newGoods = (GameObject)Instantiate(goodsPrefab, pos, transform.rotation);
 
-        newGoods.GetComponent<Rigidbody2D>().AddForce(new Vector3 (Random.Range(-20,20), Random.Range(-20, 20), 0));
+        newGoods.GetComponent<Rigidbody2D>().AddForce((GameObject.FindGameObjectWithTag("Player").transform.position - newGoods.transform.position).normalized * Random.Range(50,200));
         newGoods.GetComponent<Rigidbody2D>().MoveRotation(Quaternion.Euler(0, 0, Random.Range(0, 360)));
+        
 
         // If I wanted to get the result of instantiate and fiddle with it, I might do this instead:
         //GameObject newGoods = (GameObject)Instantiate(goodsPrefab, pos)

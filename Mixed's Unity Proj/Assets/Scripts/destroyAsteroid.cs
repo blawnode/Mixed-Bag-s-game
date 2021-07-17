@@ -21,4 +21,12 @@ public class destroyAsteroid : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnTriggerExit2D(Collider2D c2d)
+    {
+        if (c2d.CompareTag("playArea"))
+        { 
+            Destroy(gameObject);
+        }
+    }
 }
