@@ -20,7 +20,13 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnMainMenuBtnPlay()
     {
-        SceneManager.LoadScene("Game");
+        GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
+
+        if (!loaderObject)
+            Debug.LogError("Failed to find SceneLoader");
+
+        SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
+        loader.LoadScene("Game");
     }
 
     public void OnMainMenuBtnSettings()

@@ -10,6 +10,7 @@ TagManager:
   - Battery
   - playArea
   - Asteroid
+  - SceneLoader
   layers:
   - Default
   - TransparentFX
