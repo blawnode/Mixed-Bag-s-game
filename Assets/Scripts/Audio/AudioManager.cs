@@ -27,14 +27,14 @@ public class AudioManager : MonoBehaviour
         BatteryPickup,
         BatterySpawn,
         LowBatteryAlert,
-        BreatheIn,
-        BreatheOut,
+        BreatheIn, // DELETE ? // 
+        BreatheOut, // DELETE ? // 
         ButtonHover,
         ButtonRelease,
         GenericButtonPress,
         PlayButtonPress,
         Death,
-        Ow,
+        Ow, // DELETE? //
         LargeCollision,
         MinorCollision,
         NoteClose,
@@ -42,6 +42,7 @@ public class AudioManager : MonoBehaviour
         NotePickup,
         ScreenFadeIn,
         ScreenFadeOut,
+        MediumCollision,
     }
 
     private void Initialize()

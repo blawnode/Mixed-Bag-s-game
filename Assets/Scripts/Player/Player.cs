@@ -7,10 +7,13 @@ public class Player : MonoBehaviour
     // battery
     [SerializeField] private UnityEngine.UI.Slider batterySlider;
 
+    [SerializeField] private float lowBatteryThershold = .3f;
+
     [SerializeField] private float batteryUseInterval;
     private float batteryUseTimer;
 
-    private bool dead = false;
+
+    private bool isDead = false;
 
     // camera
     [SerializeField] private PlayerCamera playerCamera;
@@ -20,7 +23,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (dead)
+        if (isDead)
             return;
 
         batteryUseTimer += Time.deltaTime;
@@ -29,9 +32,12 @@ public class Player : MonoBehaviour
             batteryUseTimer = 0f;
             batterySlider.value = Mathf.Max(batterySlider.value - 0.01f, 0f);
 
-            if (batterySlider.value == 0f && !dead)
+            if (batterySlider.value < lowBatteryThershold)
+                AudioManager.i.Play(AudioManager.AudioName.LowBatteryAlert);
+
+            if (batterySlider.value == 0f && !isDead)
             {
-                dead = true;
+                isDead = true;
                 AudioManager.i.Play(AudioManager.AudioName.Death);
             }
         }
@@ -39,7 +45,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (dead)
+        if (isDead)
             return;
 
         // Player movement
@@ -49,7 +55,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D c2d)
     {
-        if (dead)
+        if (isDead)
             return;
 
         Spawnable spawnable = c2d.GetComponent<Spawnable>();
@@ -60,7 +66,16 @@ public class Player : MonoBehaviour
 
         if(c2d.CompareTag("Asteroid"))
         {
-            AudioManager.i.Play(AudioManager.AudioName.Ow);
+            if (value > 85)
+                AudioManager.i.Play(AudioManager.AudioName.LargeCollision);
+            else if (value > 35)
+                AudioManager.i.Play(AudioManager.AudioName.MediumCollision);
+            else
+            {
+                AudioManager.i.Play(AudioManager.AudioName.Ow);
+                AudioManager.i.Play(AudioManager.AudioName.MinorCollision);
+            }
+
             batterySlider.value = Mathf.Max(batterySlider.value - value / 100f, 0);
         }
         else if(c2d.CompareTag("Battery"))
