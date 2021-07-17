@@ -25,7 +25,7 @@ public class FuelManager : MonoBehaviour
         if (fuelSlider.value == 0)
         {
             print("*death*");
-            // TODO: Send message to end game
+            // TODO: Send message to end game.
         }
 
         if (Player.impact > 0)

@@ -15,11 +15,11 @@ C:/Users/magshimim/Desktop/Mixed-Bag-s-game/Mixed's Unity Proj
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9911
+1255
 Successfully changed project path to: C:/Users/magshimim/Desktop/Mixed-Bag-s-game/Mixed's Unity Proj
 C:/Users/magshimim/Desktop/Mixed-Bag-s-game/Mixed's Unity Proj
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 71.11 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 78.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
@@ -35,37 +35,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002737 seconds.
+Registered in 0.003597 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.890 seconds
+- Completed reload, in  3.925 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006938 seconds.
+Registered in 0.038150 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 54.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 93.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.857 seconds
+- Completed reload, in  5.671 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2161 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 96.8 MB.
-System memory in use after: 96.7 MB.
+System memory in use after: 96.8 MB.
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2595.
-Total: 4.912600 ms (FindLiveObjects: 0.258600 ms CreateObjectMapping: 0.131100 ms MarkObjects: 4.250600 ms  DeleteObjects: 0.270000 ms)
+Total: 4.953500 ms (FindLiveObjects: 0.309100 ms CreateObjectMapping: 0.144300 ms MarkObjects: 4.255600 ms  DeleteObjects: 0.242400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -79,25 +79,381 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa27944bdea339c97c39027c7eea529c') in 0.029705 seconds 
-  Import took 0.035181 seconds .
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.079741 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.083825 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.269287 seconds.
-  path: Assets/Scenes/Game.unity
-  artifactKey: Guid(8f1b03b833c984141a8f190c170998d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game.unity using Guid(8f1b03b833c984141a8f190c170998d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134bab27a12ec06bc47f155c1b28e6ab') in 0.021765 seconds 
-  Import took 0.031574 seconds .
+  Time since last request: 0.067216 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000766 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.012536 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002306 seconds.
-  path: Assets/Scenes/Game.unity
-  artifactKey: Guid(8f1b03b833c984141a8f190c170998d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game.unity using Guid(8f1b03b833c984141a8f190c170998d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134bab27a12ec06bc47f155c1b28e6ab') in 0.011402 seconds 
-  Import took 0.017673 seconds .
+  Time since last request: 0.052053 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000952 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.018427 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039888 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000543 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.005025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056852 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000658 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.026949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066739 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000568 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.007340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060848 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000933 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.015774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062549 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000545 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.008424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045635 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000710 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.028309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069922 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001144 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.010687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053142 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000606 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.011182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087520 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.056292 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.146520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068926 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.012817 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.095183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052292 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000751 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.026371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048131 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000762 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.008889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.100606 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003634 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.023827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.090784 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000763 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.006837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043615 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009355 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.017307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040399 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000719 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.015114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038253 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000521 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.007197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036370 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000561 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.006764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054645 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004370 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.014023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048234 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000602 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.008848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033103 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000506 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.005236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047775 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000479 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.009511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045885 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000589 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.006812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048960 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001393 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.009667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049149 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000725 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.027354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040408 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000653 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.009119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056870 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000973 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.008399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036111 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000911 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.008772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047528 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000775 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.014414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136026 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000599 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.010841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045063 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001055 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.016150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048252 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000439 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.005633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052618 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000512 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.008141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044508 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000762 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.009784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055891 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000562 seconds  code(4) message(Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z')
+  ERROR: Build asset version error: assets/scripts/fuelmanager.cs in SourceAssetDB has modification time of '2021-07-17T07:27:52.5215899Z' while content on disk has modification time of '2021-07-17T07:36:42.8028424Z'
+  Import took 0.007447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.468478 seconds.
+  path: Assets/Scripts/FuelManager.cs
+  artifactKey: Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FuelManager.cs using Guid(1e24dc79da53c7d41bab77f7ce46ac08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d76a022b859535e90a832630ae9325') in 0.150150 seconds 
+  Import took 0.163662 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.475 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.5 MB.
+System memory in use after: 95.5 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2599.
+Total: 3.221900 ms (FindLiveObjects: 0.254100 ms CreateObjectMapping: 0.136600 ms MarkObjects: 2.689400 ms  DeleteObjects: 0.140200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
