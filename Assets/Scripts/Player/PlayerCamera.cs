@@ -13,6 +13,7 @@ public class PlayerCamera : MonoBehaviour
     {
         Vector2 normalized = (target.position - Camera.main.ScreenToWorldPoint(Input.mousePosition)).normalized;
         transform.position = Vector3.SmoothDamp(transform.position, target.position - (Vector3)(normalized * maxOffsetLength), ref velocity, smoothTime);
+        transform.position = new Vector3(transform.position.x, transform.position.y, -10);
     }
 
 }
