@@ -2835,6 +2835,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 728084294}
     m_Modifications:
+    - target: {fileID: 2627530147072286244, guid: 9dfd78a4d544a674e85e529a00fc7da6, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627530147072286244, guid: 9dfd78a4d544a674e85e529a00fc7da6, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2627530147072286426, guid: 9dfd78a4d544a674e85e529a00fc7da6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2922,6 +2930,10 @@ PrefabInstance:
     - target: {fileID: 2627530147072286427, guid: 9dfd78a4d544a674e85e529a00fc7da6, type: 3}
       propertyPath: m_Name
       value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627530147072286427, guid: 9dfd78a4d544a674e85e529a00fc7da6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dfd78a4d544a674e85e529a00fc7da6, type: 3}

@@ -39,6 +39,14 @@ public class Player : MonoBehaviour
             {
                 isDead = true;
                 AudioManager.i.Play(AudioManager.AudioName.Death);
+
+                GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
+
+                if (!loaderObject)
+                    Debug.LogError("Failed to find SceneLoader");
+
+                SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
+                loader.LoadScene("Game");
             }
         }
     }
