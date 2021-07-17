@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
                     Debug.LogError("Failed to find SceneLoader");
 
                 SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
-                loader.LoadScene("Game");
+                loader.LoadDeathScene();
             }
         }
     }
