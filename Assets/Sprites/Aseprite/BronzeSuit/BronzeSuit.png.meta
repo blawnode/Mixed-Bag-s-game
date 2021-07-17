@@ -1,0 +1,1248 @@
+fileFormatVersion: 2
+guid: a7e6b3ed8dfaef54986a6113647f07dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7118177876440353758
+    second: BronzeSuit00
+  - first:
+      213: 2004622651549773797
+    second: BronzeSuit01
+  - first:
+      213: 5784451459038855135
+    second: BronzeSuit02
+  - first:
+      213: -7608354473897951748
+    second: BronzeSuit03
+  - first:
+      213: 380471785743830942
+    second: BronzeSuit04
+  - first:
+      213: -997329775909897960
+    second: BronzeSuit05
+  - first:
+      213: 5479239655790469478
+    second: BronzeSuit06
+  - first:
+      213: -158057392870166674
+    second: BronzeSuit07
+  - first:
+      213: -7290552287453204515
+    second: BronzeSuit08
+  - first:
+      213: -3401950927399632555
+    second: BronzeSuit09
+  - first:
+      213: -3370653055293649118
+    second: BronzeSuit10
+  - first:
+      213: 6155506183057410147
+    second: BronzeSuit11
+  - first:
+      213: -4509816718473758605
+    second: BronzeSuit12
+  - first:
+      213: 2620003825690013725
+    second: BronzeSuit13
+  - first:
+      213: -8351222591807234013
+    second: BronzeSuit14
+  - first:
+      213: -6221298052881488781
+    second: BronzeSuit15
+  - first:
+      213: 8275915989046858224
+    second: BronzeSuit16
+  - first:
+      213: 9074173466178152821
+    second: BronzeSuit17
+  - first:
+      213: -6485061469680917542
+    second: BronzeSuit18
+  - first:
+      213: 4972414899710153634
+    second: BronzeSuit19
+  - first:
+      213: 9217135984806861399
+    second: BronzeSuit20
+  - first:
+      213: -6957087538900523891
+    second: BronzeSuit21
+  - first:
+      213: 6088003580432322133
+    second: BronzeSuit22
+  - first:
+      213: 2532809922789329074
+    second: BronzeSuit23
+  - first:
+      213: -526177282408663576
+    second: BronzeSuit24
+  - first:
+      213: 8529188371728431086
+    second: BronzeSuit25
+  - first:
+      213: 8575347409381296439
+    second: BronzeSuit26
+  - first:
+      213: -4745468514374603323
+    second: BronzeSuit27
+  - first:
+      213: -4374966024302108551
+    second: BronzeSuit28
+  - first:
+      213: 9098121526994245602
+    second: BronzeSuit29
+  - first:
+      213: -6004308508080052024
+    second: BronzeSuit30
+  - first:
+      213: -1832328571142500215
+    second: BronzeSuit31
+  - first:
+      213: 6612137263685051344
+    second: BronzeSuit32
+  - first:
+      213: -8630276865907520645
+    second: BronzeSuit33
+  - first:
+      213: 4177635778017404564
+    second: BronzeSuit34
+  - first:
+      213: 5501317894900755894
+    second: BronzeSuit35
+  - first:
+      213: -5729563691779082824
+    second: BronzeSuit36
+  - first:
+      213: -5463437649617648544
+    second: BronzeSuit37
+  - first:
+      213: -603273240913621603
+    second: BronzeSuit38
+  - first:
+      213: 3391018305377868535
+    second: BronzeSuit39
+  - first:
+      213: 5636186110156800183
+    second: BronzeSuit40
+  - first:
+      213: 3752758551726376645
+    second: BronzeSuit41
+  - first:
+      213: -4948096546302317078
+    second: BronzeSuit42
+  - first:
+      213: -2780998040129911656
+    second: BronzeSuit43
+  - first:
+      213: 1328928815568082253
+    second: BronzeSuit44
+  - first:
+      213: 1973221717456608141
+    second: BronzeSuit45
+  - first:
+      213: -3384099226433357131
+    second: BronzeSuit46
+  - first:
+      213: -6363229607539127026
+    second: BronzeSuit47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BronzeSuit00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2247ab26fe6273d90800000000000000
+      internalID: -7118177876440353758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit01
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef635e3ea9d1db10800000000000000
+      internalID: 2004622651549773797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit02
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf308464ff764050800000000000000
+      internalID: 5784451459038855135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit03
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdfe02bae1b96690800000000000000
+      internalID: -7608354473897951748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit04
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fc154c215b74500800000000000000
+      internalID: 380471785743830942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit05
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81978f65ad5c822f0800000000000000
+      internalID: -997329775909897960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit06
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661ef9acf6b2a0c40800000000000000
+      internalID: 5479239655790469478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit07
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 253
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f69db73a77ecdf0800000000000000
+      internalID: -158057392870166674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfa0f15251c2da90800000000000000
+      internalID: -7290552287453204515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit09
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551c805e7a7d9c0d0800000000000000
+      internalID: -3401950927399632555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f032a97e80931d0800000000000000
+      internalID: -3370653055293649118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3688bdd9240cc6550800000000000000
+      internalID: 6155506183057410147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit12
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378f04da699e961c0800000000000000
+      internalID: -4509816718473758605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit13
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10fa6c199f1c5420800000000000000
+      internalID: 2620003825690013725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit14
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320ec17ac4f7a1c80800000000000000
+      internalID: -8351222591807234013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit15
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 211
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3746b2cf16289a9a0800000000000000
+      internalID: -6221298052881488781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f11d1e8eb5f9d270800000000000000
+      internalID: 8275915989046858224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579e2d1c0b0fded70800000000000000
+      internalID: 9074173466178152821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit18
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3a811e3fe6006a0800000000000000
+      internalID: -6485061469680917542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit19
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3551d9101910540800000000000000
+      internalID: 4972414899710153634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit20
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a12ecf758d9ef70800000000000000
+      internalID: 9217135984806861399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit21
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84a98c5eb5737f90800000000000000
+      internalID: -6957087538900523891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e89f2300fec7450800000000000000
+      internalID: 6088003580432322133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit23
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 169
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b841739439562320800000000000000
+      internalID: 2532809922789329074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5b629ac84a2b8f0800000000000000
+      internalID: -526177282408663576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7f34f62a3cd5670800000000000000
+      internalID: 8529188371728431086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7390db1e801c10770800000000000000
+      internalID: 8575347409381296439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit27
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cda6eb5785b42eb0800000000000000
+      internalID: -4745468514374603323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit28
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970e119949ff843c0800000000000000
+      internalID: -4374966024302108551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit29
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e793db2355034e70800000000000000
+      internalID: 9098121526994245602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit30
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8680e59396caca0800000000000000
+      internalID: -6004308508080052024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit31
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 127
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98090456fd24296e0800000000000000
+      internalID: -1832328571142500215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d322180fc703cb50800000000000000
+      internalID: 6612137263685051344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit33
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b8f466ae81b3880800000000000000
+      internalID: -8630276865907520645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit34
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496a0b52b91f9f930800000000000000
+      internalID: 4177635778017404564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit35
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd2f0a6a7b985c40800000000000000
+      internalID: 5501317894900755894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit36
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b53889cd208c70b0800000000000000
+      internalID: -5729563691779082824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit37
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0648b0a7768fd24b0800000000000000
+      internalID: -5463437649617648544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit38
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d48d40f2eb0a7f0800000000000000
+      internalID: -603273240913621603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit39
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 85
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa15eeae215f0f20800000000000000
+      internalID: 3391018305377868535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b003e7c761c73e40800000000000000
+      internalID: 5636186110156800183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit41
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6c573150a741430800000000000000
+      internalID: 3752758551726376645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit42
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed20534864d45bb0800000000000000
+      internalID: -4948096546302317078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit43
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894cff05409e769d0800000000000000
+      internalID: -2780998040129911656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit44
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4557bf77bd417210800000000000000
+      internalID: 1328928815568082253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit45
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b561c82ba426b10800000000000000
+      internalID: 1973221717456608141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit46
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5baf3cbeea34901d0800000000000000
+      internalID: -3384099226433357131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BronzeSuit47
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 43
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dc162c26441b7a0800000000000000
+      internalID: -6363229607539127026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
