@@ -1,31 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private PlayerCamera playerCamera;
 
-    public Vector2 speed = new Vector2(50, 50);
+    [SerializeField] private Vector2 speed = new Vector2(50f, 50f);
     public static int impact = 0;
     public static int battery = 0;
 
-
-    // Start is called before the first frame update
-    void Start()
+    void FixedUpdate()
     {
+        // player camera
+        float rawX = Input.GetAxisRaw("Horizontal");
+        float rawY = Input.GetAxisRaw("Vertical");
+        playerCamera.UpdateOffset(new Vector2(rawX == 0f ? 0f : Mathf.Sign(rawX), rawY == 0f ? 0f : Mathf.Sign(rawY)));
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(speed.x * inputX, speed.y * inputY, 0);
-
-        movement *= Time.deltaTime;
-
+        // player movement
+        Vector3 movement = new Vector3(speed.x * Input.GetAxis("Horizontal"), speed.y * Input.GetAxis("Vertical"), 0) * Time.fixedDeltaTime;
         transform.Translate(movement);
     }
 
