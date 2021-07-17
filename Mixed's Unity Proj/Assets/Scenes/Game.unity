@@ -817,6 +817,7 @@ GameObject:
   - component: {fileID: 1161585120}
   - component: {fileID: 1161585121}
   - component: {fileID: 1161585122}
+  - component: {fileID: 1161585123}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -855,11 +856,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -901,9 +902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd6ff68ccb8dba40b7fac01361ecbc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2053019645}
-  offset: {x: 0, y: 0, z: -1}
-  smoothTime: 0.1
 --- !u!114 &1161585121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,16 +914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f130fdf0fab42d46a54667e8aff5765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theGoodies:
-  - {fileID: 1159266644781930943, guid: 89fd94a270ae6464180acfaae91744ff, type: 3}
-  - {fileID: 6536776083769171688, guid: ee935c16b543e2b4f8877aab74d8aacc, type: 3}
-  - {fileID: 5117363886407529142, guid: 09e4dac0f02cf204685af2f56faf70b1, type: 3}
-  waitingForNextSpawn: 0.5
-  theCountdown: 0.5
-  xMin: -10
-  xMax: 10
-  yMin: -10
-  yMax: 10
 --- !u!45 &1161585122
 Skybox:
   m_ObjectHideFlags: 0
@@ -935,6 +923,21 @@ Skybox:
   m_GameObject: {fileID: 1161585116}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 0}
+--- !u!114 &1161585123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161585116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9929ba5efe179244b4a88c6c992a90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2053019645}
+  maxOffsetLength: 2
+  smoothTime: 0.3
 --- !u!1 &1217854217
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217854219}
   - component: {fileID: 1217854218}
+  - component: {fileID: 1217854220}
   m_Layer: 0
   m_Name: Ingame Master Manager
   m_TagString: Untagged
@@ -966,7 +970,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuelText: {fileID: 603760595}
   fuelSlider: {fileID: 1964608780}
+  nextActionTime: 0
   period: 1
+  fuelAmount: 0
 --- !u!4 &1217854219
 Transform:
   m_ObjectHideFlags: 0
@@ -981,6 +987,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1217854220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217854217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2422c34aa34692446aec2f762f3f9cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 2053019645}
+  spawnables:
+  - {fileID: 1159266644781930943, guid: 89fd94a270ae6464180acfaae91744ff, type: 3}
+  - {fileID: 6536776083769171688, guid: ee935c16b543e2b4f8877aab74d8aacc, type: 3}
+  - {fileID: 5117363886407529142, guid: 09e4dac0f02cf204685af2f56faf70b1, type: 3}
+  - {fileID: 7121259219206445948, guid: 0f8f14b0a68bdaa48ad676fef096c400, type: 3}
+  spawnInterval: 0.34
+  minSpawnDistance: 12
+  maxSpawnDistance: 32
 --- !u!1 &1224278444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,7 +1753,6 @@ GameObject:
   - component: {fileID: 2053019647}
   - component: {fileID: 2053019646}
   - component: {fileID: 2053019648}
-  - component: {fileID: 2053019649}
   - component: {fileID: 2053019650}
   m_Layer: 0
   m_Name: Player
@@ -1833,6 +1859,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38f9d78fca8bed48903eabc0052e007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  batterySlider: {fileID: 0}
+  batteryUseInterval: 0.1
+  playerCamera: {fileID: 0}
   speed: {x: 2.5, y: 2.5}
 --- !u!61 &2053019648
 BoxCollider2D:
@@ -1860,26 +1889,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01}
   m_EdgeRadius: 0
---- !u!114 &2053019649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053019643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f130fdf0fab42d46a54667e8aff5765, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theGoodies:
-  - {fileID: 7121259219206445948, guid: 0f8f14b0a68bdaa48ad676fef096c400, type: 3}
-  waitingForNextSpawn: 10
-  theCountdown: 10
-  xMin: -20
-  xMax: 20
-  yMin: -20
-  yMax: 20
 --- !u!114 &2053019650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1893,8 +1902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1086535439}
-  score: 0
-  delayAmount: 1
+  scoreInterval: 0
 --- !u!1 &2069495985
 GameObject:
   m_ObjectHideFlags: 0
