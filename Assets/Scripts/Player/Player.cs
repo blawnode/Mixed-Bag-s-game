@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (flashlight == null) Debug.LogWarning("Flashlight expected.");
+        if (animator == null) Debug.LogWarning("Animator expected.");
     }
 
     private void Update()
@@ -41,27 +44,30 @@ public class Player : MonoBehaviour
         if (isDead)
             return;
 
-        batteryUseTimer += Time.deltaTime;
-        if (batteryUseTimer >= batteryUseInterval)
+        if (batterySlider != null)
         {
-            batteryUseTimer = 0f;
-            batterySlider.value = Mathf.Max(batterySlider.value - 0.01f, 0f);
-
-            if (batterySlider.value < lowBatteryThershold)
-                AudioManager.i.Play(AudioManager.AudioName.LowBatteryAlert);
-
-            if (batterySlider.value == 0f && !isDead)
+            batteryUseTimer += Time.deltaTime;
+            if (batteryUseTimer >= batteryUseInterval)
             {
-                isDead = true;
-                AudioManager.i.Play(AudioManager.AudioName.Death);
+                batteryUseTimer = 0f;
+                batterySlider.value = Mathf.Max(batterySlider.value - 0.01f, 0f);
 
-                GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
+                if (batterySlider.value < lowBatteryThershold)
+                    AudioManager.i.Play(AudioManager.AudioName.LowBatteryAlert);
 
-                if (!loaderObject)
-                    Debug.LogError("Failed to find SceneLoader");
+                if (batterySlider.value == 0f && !isDead)
+                {
+                    isDead = true;
+                    AudioManager.i.Play(AudioManager.AudioName.Death);
 
-                SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
-                loader.LoadDeathScene();
+                    GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
+
+                    if (!loaderObject)
+                        Debug.LogError("Failed to find SceneLoader");
+
+                    SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
+                    loader.LoadDeathScene();
+                }
             }
         }
 
@@ -71,7 +77,7 @@ public class Player : MonoBehaviour
             flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
         }
 
-        if(Input.GetMouseButtonDown(0))
+        if(flashlight != null && Input.GetMouseButtonDown(0))
         {
             ToggleFlashlight();
         }
@@ -87,29 +93,32 @@ public class Player : MonoBehaviour
         transform.Translate(movement);
 
         // Animations
-        float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-        string chosenStateName = "";
-        if (movement.x > 0)
+        if (flashlight != null)
         {
-            if (isFlashlightOn)
-                chosenStateName = "Flash E";
-            else chosenStateName = "Idle E";
-        }
-        else if(movement.x < 0)
-        {
-            if (isFlashlightOn)
-                chosenStateName = "Flash W";
-            else chosenStateName = "Idle W";
-        }
-        else
-        {
-            if (isFlashlightOn)
-                chosenStateName = "Flash S";
-            else chosenStateName = "Idle S";
-        }
-        if(!animator.GetCurrentAnimatorStateInfo(0).IsName(chosenStateName))
-        {
-            animator.Play(chosenStateName, -1, normalizedTime);
+            float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+            string chosenStateName = "";
+            if (movement.x > 0)
+            {
+                if (isFlashlightOn)
+                    chosenStateName = "Flash E";
+                else chosenStateName = "Idle E";
+            }
+            else if (movement.x < 0)
+            {
+                if (isFlashlightOn)
+                    chosenStateName = "Flash W";
+                else chosenStateName = "Idle W";
+            }
+            else
+            {
+                if (isFlashlightOn)
+                    chosenStateName = "Flash S";
+                else chosenStateName = "Idle S";
+            }
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName(chosenStateName))
+            {
+                animator.Play(chosenStateName, -1, normalizedTime);
+            }
         }
     }
 
