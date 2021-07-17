@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
@@ -68,6 +69,11 @@ public class Player : MonoBehaviour
         {
             float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
             flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            ToggleFlashlight();
         }
     }
 
@@ -151,5 +157,11 @@ public class Player : MonoBehaviour
             isBreathingIn = !isBreathingIn;
             lastBreatheTime = Time.time;
         }
+    }
+
+    private void ToggleFlashlight()
+    {
+        isFlashlightOn = !isFlashlightOn;
+        flashlight.GetComponentInChildren<Light2D>().enabled = isFlashlightOn;
     }
 }
