@@ -21,6 +21,20 @@ public class Player : MonoBehaviour
     // movement
     [SerializeField] private Vector2 speed = new Vector2(50f, 50f);
 
+    [SerializeField] private GameObject flashlight;
+    private bool isFlashlightOn = false;
+
+    private bool isBreathingIn = true;  // false -> breathing out. Used by Breathe(), which's used by the animator
+    private float lastBreatheTime = 0;
+    private float breatheCooldownTime = 0.3f;
+
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void Update()
     {
         if (isDead)
@@ -49,6 +63,12 @@ public class Player : MonoBehaviour
                 loader.LoadDeathScene();
             }
         }
+
+        if(flashlight != null)  // TODO: This here assumes the player uses a mouse.
+        {
+            float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
+            flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
     }
 
     void FixedUpdate()
@@ -59,6 +79,32 @@ public class Player : MonoBehaviour
         // Player movement
         Vector3 movement = new Vector3(speed.x * Input.GetAxis("Horizontal"), speed.y * Input.GetAxis("Vertical"), 0) * Time.fixedDeltaTime;
         transform.Translate(movement);
+
+        // Animations
+        float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        string chosenStateName = "";
+        if (movement.x > 0)
+        {
+            if (isFlashlightOn)
+                chosenStateName = "Flash E";
+            else chosenStateName = "Idle E";
+        }
+        else if(movement.x < 0)
+        {
+            if (isFlashlightOn)
+                chosenStateName = "Flash W";
+            else chosenStateName = "Idle W";
+        }
+        else
+        {
+            if (isFlashlightOn)
+                chosenStateName = "Flash S";
+            else chosenStateName = "Idle S";
+        }
+        if(!animator.GetCurrentAnimatorStateInfo(0).IsName(chosenStateName))
+        {
+            animator.Play(chosenStateName, -1, normalizedTime);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D c2d)
@@ -93,4 +139,17 @@ public class Player : MonoBehaviour
         }
     }
 
+    // Used by the player's animator.
+    public void Breathe()
+    {
+        if (Time.time - lastBreatheTime >= breatheCooldownTime)  // This condition prevents the breathe from happening too frequently
+        {
+            if (isBreathingIn)
+                AudioManager.i.Play(AudioManager.AudioName.BreatheIn);
+            else
+                AudioManager.i.Play(AudioManager.AudioName.BreatheOut);
+            isBreathingIn = !isBreathingIn;
+            lastBreatheTime = Time.time;
+        }
+    }
 }
