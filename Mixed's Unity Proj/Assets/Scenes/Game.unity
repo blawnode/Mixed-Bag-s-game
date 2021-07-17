@@ -968,11 +968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e24dc79da53c7d41bab77f7ce46ac08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuelText: {fileID: 603760595}
-  fuelSlider: {fileID: 1964608780}
-  nextActionTime: 0
-  period: 1
-  fuelAmount: 0
 --- !u!4 &1217854219
 Transform:
   m_ObjectHideFlags: 0
@@ -1859,9 +1854,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38f9d78fca8bed48903eabc0052e007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  batterySlider: {fileID: 0}
+  batterySlider: {fileID: 1964608780}
   batteryUseInterval: 0.1
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 1161585123}
   speed: {x: 2.5, y: 2.5}
 --- !u!61 &2053019648
 BoxCollider2D:
