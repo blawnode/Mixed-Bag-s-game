@@ -36,5 +36,8 @@ public class SpawnableManager : MonoBehaviour
         // spawn and shoot
         GameObject spawnable = Instantiate(spawnables[Random.Range(0, spawnables.Length)], position, Quaternion.Euler(0, 0, Random.Range(0, 360)));
         spawnable.GetComponent<Spawnable>().ShootTowards(playerTransform.position);
+
+        if (spawnable.CompareTag("Battery"))
+            AudioManager.i.Play(AudioManager.AudioName.BatterySpawn);
     }
 }
