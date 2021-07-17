@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
 
     public Vector2 speed = new Vector2(50, 50);
-    public int health = 100;
+    public static int impact = 0;
+    public static int battery = 0;
 
 
     // Start is called before the first frame update
@@ -32,15 +33,19 @@ public class Player : MonoBehaviour
     {
         if (c2d.CompareTag("smallAsteroid"))
         {
-            health -= 10;
+            impact = 10;
         }
         else if (c2d.CompareTag("medAsteroid"))
         {
-            health -= 25;
+            impact = 20;
         }
         else if (c2d.CompareTag("largeAsteroid"))
         {
-            health -= 50;
+            impact = 30;
+        }
+        else if (c2d.CompareTag("Battery"))
+        {
+            battery = 100;
         }
     }
 }
