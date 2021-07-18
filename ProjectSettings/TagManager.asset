@@ -12,6 +12,7 @@ TagManager:
   - Asteroid
   - SceneLoader
   - Oxygen
+  - EscapePod
   layers:
   - Default
   - TransparentFX

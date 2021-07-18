@@ -43,7 +43,11 @@ public class Player : MonoBehaviour
     private float lastBreatheTime = 0;
     private float breatheCooldownTime = 0.3f;
 
+    // references
     private Animator animator;
+    [SerializeField] private CodePanelManager codePanelManager;
+
+    [System.NonSerialized] public bool isUsingUI = false;
 
     private void Start()
     {
@@ -124,7 +128,7 @@ public class Player : MonoBehaviour
 
         //Debug.Log(angle);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isUsingUI)
             ToggleFlashlight();
     }
 
@@ -168,6 +172,16 @@ public class Player : MonoBehaviour
 
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName(chosenStateName))
             animator.Play(chosenStateName, -1, normalizedTime);
+    }
+
+    private void OnTriggerStay2D(Collider2D c2d)
+    {
+        if (c2d.CompareTag("EscapePod") && Input.GetKeyDown(KeyCode.Space))
+        {
+            codePanelManager.OpenPanel();
+            Time.timeScale = 0;
+            return;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D c2d)

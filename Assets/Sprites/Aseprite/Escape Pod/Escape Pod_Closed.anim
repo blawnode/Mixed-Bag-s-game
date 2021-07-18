@@ -21,10 +21,10 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -2082672953248921439, guid: 5a312c0b790928e47931b3c48269c844, type: 3}
-    - time: 0.060000002
+    - time: 0.08
       value: {fileID: -2082672953248921439, guid: 5a312c0b790928e47931b3c48269c844, type: 3}
     attribute: m_Sprite
-    path: 
+    path: Graphics/P o d
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 25
@@ -35,7 +35,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 565009360
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -49,7 +49,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.1
+    m_StopTime: 0.12
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -18,7 +18,6 @@ public class Note : MonoBehaviour
 
     public void Close()
     {
-        // TODO: Be able to read this again later? (Might be too complex for our time limit)
         Time.timeScale = 1;
         noteScreen.GetComponent<Animator>().Play("Leave");
         Destroy(gameObject);
@@ -27,7 +26,9 @@ public class Note : MonoBehaviour
     void OnTriggerEnter2D(Collider2D c2d)
     {
         if (c2d.CompareTag("Player"))
+        {
+            c2d.GetComponent<Player>().isUsingUI = true;
             Open();
-        
+        }
     }
 }

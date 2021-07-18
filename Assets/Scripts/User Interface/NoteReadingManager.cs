@@ -3,6 +3,7 @@ using UnityEngine;
 public class NoteReadingManager : MonoBehaviour
 {
     Note currentNote;
+    [SerializeField] Player player;
 
     public void SetNote(Note note)
     {
@@ -12,5 +13,7 @@ public class NoteReadingManager : MonoBehaviour
     public void CloseNote()
     {
         currentNote.Close();
+        currentNote = null;
+        player.isUsingUI = false;
     }
 }
