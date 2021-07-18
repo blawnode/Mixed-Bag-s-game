@@ -24,9 +24,8 @@ public class AudioManager : MonoBehaviour
 
     public enum AudioName
     {
-        BatteryPickup,
-        BatterySpawn,
-        LowBatteryAlert,
+        O2Pickup,
+        LowO2Alert,
         BreatheIn, // DELETE ? // 
         BreatheOut, // DELETE ? // 
         ButtonHover,

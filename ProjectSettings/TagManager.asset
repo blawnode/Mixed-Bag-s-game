@@ -11,6 +11,7 @@ TagManager:
   - playArea
   - Asteroid
   - SceneLoader
+  - Oxygen
   layers:
   - Default
   - TransparentFX
