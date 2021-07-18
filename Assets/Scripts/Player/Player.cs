@@ -157,15 +157,16 @@ public class Player : MonoBehaviour
     // Used by the player's animator.
     public void Breathe()
     {
-        if (Time.time - lastBreatheTime >= breatheCooldownTime)  // This condition prevents the breathe from happening too frequently
-        {
-            if (isBreathingIn)
-                AudioManager.i.Play(AudioManager.AudioName.BreatheIn);
-            else
-                AudioManager.i.Play(AudioManager.AudioName.BreatheOut);
-            isBreathingIn = !isBreathingIn;
-            lastBreatheTime = Time.time;
-        }
+        // can we not????
+        // if (Time.time - lastBreatheTime >= breatheCooldownTime)  // This condition prevents the breathe from happening too frequently
+        // {
+        //     if (isBreathingIn)
+        //         AudioManager.i.Play(AudioManager.AudioName.BreatheIn);
+        //     else
+        //         AudioManager.i.Play(AudioManager.AudioName.BreatheOut);
+        //     isBreathingIn = !isBreathingIn;
+        //     lastBreatheTime = Time.time;
+        // }
     }
 
     private void ToggleFlashlight()
