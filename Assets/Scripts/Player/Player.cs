@@ -59,13 +59,13 @@ public class Player : MonoBehaviour
         time += Time.deltaTime;
         o2useTimer += Time.deltaTime;
 
-        timeText.text = "Time: " + Mathf.FloorToInt(time).ToString() + 's';
+        if(timeText != null) timeText.text = "Time: " + Mathf.FloorToInt(time).ToString() + 's';
 
         if (o2useTimer >= o2UseInterval)
         {
             o2UseInterval = 0f;
             o2 -= 0.01f;
-            o2Image.fillAmount = o2 / 150f;
+            if (o2Image != null) o2Image.fillAmount = o2 / 150f;
 
             if (o2 < lowO2Theshold)
                 AudioManager.i.Play(AudioManager.AudioName.LowO2Alert);
@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
         float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
         flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         if (Input.GetMouseButtonDown(0))
             ToggleFlashlight();

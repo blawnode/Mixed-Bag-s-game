@@ -207,6 +207,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6029703591754017663, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
   m_PrefabInstance: {fileID: 6029703592008629620}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &432005191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6029703591573264109, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
+  m_PrefabInstance: {fileID: 6029703592008629620}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &617875082
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +679,63 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &578285448329583192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 578285448245814041, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_Name
+      value: Escape Pod
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578285448245814042, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a55196edc22aad4c8395e9af3395f6a, type: 3}
 --- !u!1001 &1008130547320436543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -869,10 +937,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6029703591573264109, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6029703591754017651, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6029703591754017656, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
+      propertyPath: light2d
+      value: 
+      objectReference: {fileID: 432005191}
     - target: {fileID: 6029703591754017656, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
       propertyPath: playerCamera
       value: 
