@@ -1,16 +1,21 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Experimental.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
-    // battery
-    [SerializeField] private UnityEngine.UI.Slider batterySlider;
+    // oxygen
+    [SerializeField] private Image o2Image;
+    private float o2 = 150f;
 
-    [SerializeField] private float lowBatteryThershold = .3f;
+    [SerializeField] private float lowO2Theshold = 30f;
 
-    [SerializeField] private float batteryUseInterval;
-    private float batteryUseTimer;
+    [SerializeField] private float o2UseInterval;
+    private float o2useTimer;
 
+    // health
+    [SerializeField] private Image hpImage;
+    private float hp = 100f;
 
     private bool isDead = false;
 
@@ -46,43 +51,42 @@ public class Player : MonoBehaviour
         if (isDead)
             return;
 
-        if (batterySlider != null)
+        o2useTimer += Time.deltaTime;
+        if (o2useTimer >= o2UseInterval)
         {
-            batteryUseTimer += Time.deltaTime;
-            if (batteryUseTimer >= batteryUseInterval)
+            o2UseInterval = 0f;
+            o2 -= 0.01f;
+            o2Image.fillAmount = o2 / 150f;
+
+            if (o2 < lowO2Theshold)
+                AudioManager.i.Play(AudioManager.AudioName.LowO2Alert);
+
+            if ((o2 <= 0f || hp <= 0f) && !isDead)
             {
-                batteryUseTimer = 0f;
-                batterySlider.value = Mathf.Max(batterySlider.value - 0.01f, 0f);
+                isDead = true;
+                AudioManager.i.Play(AudioManager.AudioName.Death);
 
-                if (batterySlider.value < lowBatteryThershold)
-                    AudioManager.i.Play(AudioManager.AudioName.LowBatteryAlert);
+                GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
 
-                if (batterySlider.value == 0f && !isDead)
-                {
-                    isDead = true;
-                    AudioManager.i.Play(AudioManager.AudioName.Death);
+                if (!loaderObject)
+                    Debug.LogError("Failed to find SceneLoader");
 
-                    GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
+                SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
 
-                    if (!loaderObject)
-                        Debug.LogError("Failed to find SceneLoader");
-
-                    SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
-                    loader.LoadScene("Death");
-                }
+                if (hp <= 0f)
+                    loader.LoadScene("DeathByHp");
+                if (o2 <= 0f)
+                    loader.LoadScene("DeathByO2");
             }
         }
 
-        if(flashlight != null)  // TODO: This here assumes the player uses a mouse.
-        {
-            float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
-            flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
-        }
+        float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
+        flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        if(flashlight != null && Input.GetMouseButtonDown(0))
-        {
+        Debug.Log(flashlight.transform.rotation);
+
+        if (Input.GetMouseButtonDown(0))
             ToggleFlashlight();
-        }
     }
 
     void FixedUpdate()
@@ -95,32 +99,29 @@ public class Player : MonoBehaviour
         transform.Translate(movement);
 
         // Animations
-        if (flashlight != null)
+        float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        string chosenStateName = "";
+        if (movement.x > 0)
         {
-            float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-            string chosenStateName = "";
-            if (movement.x > 0)
-            {
-                if (light2d.enabled)
-                    chosenStateName = "Flash E";
-                else chosenStateName = "Idle E";
-            }
-            else if (movement.x < 0)
-            {
-                if (light2d.enabled)
-                    chosenStateName = "Flash W";
-                else chosenStateName = "Idle W";
-            }
-            else
-            {
-                if (light2d.enabled)
-                    chosenStateName = "Flash S";
-                else chosenStateName = "Idle S";
-            }
-            if (!animator.GetCurrentAnimatorStateInfo(0).IsName(chosenStateName))
-            {
-                animator.Play(chosenStateName, -1, normalizedTime);
-            }
+            if (light2d.enabled)
+                chosenStateName = "Flash E";
+            else chosenStateName = "Idle E";
+        }
+        else if (movement.x < 0)
+        {
+            if (light2d.enabled)
+                chosenStateName = "Flash W";
+            else chosenStateName = "Idle W";
+        }
+        else
+        {
+            if (light2d.enabled)
+                chosenStateName = "Flash S";
+            else chosenStateName = "Idle S";
+        }
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName(chosenStateName))
+        {
+            animator.Play(chosenStateName, -1, normalizedTime);
         }
     }
 
@@ -147,12 +148,16 @@ public class Player : MonoBehaviour
                 AudioManager.i.Play(AudioManager.AudioName.MinorCollision);
             }
 
-            batterySlider.value = Mathf.Max(batterySlider.value - value / 100f, 0);
+            hp -= value;
+            if (hp < 0)
+                hp = 0;
+            hpImage.fillAmount = Mathf.Max(hp / 100f, 0);
         }
-        else if(c2d.CompareTag("Battery"))
+        else if(c2d.CompareTag("Oxygen"))
         {
-            AudioManager.i.Play(AudioManager.AudioName.BatteryPickup);
-            batterySlider.value = Mathf.Max(batterySlider.value + value / 100f, 1);
+            AudioManager.i.Play(AudioManager.AudioName.O2Pickup);
+            o2 += value;
+            o2Image.fillAmount = o2 / 150f;
         }
     }
 
