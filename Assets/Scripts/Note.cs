@@ -13,6 +13,7 @@ public class Note : MonoBehaviour
         noteScreenText.text = text;
         noteScreen.GetComponent<Animator>().Play("Enter");
         noteReadingManager.SetNote(this);
+        NoteCounter.noteCount += 1;
     }
 
     public void Close()
@@ -27,5 +28,6 @@ public class Note : MonoBehaviour
     {
         if (c2d.CompareTag("Player"))
             Open();
+        
     }
 }
