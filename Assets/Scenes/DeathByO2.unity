@@ -455,7 +455,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 85}
+  m_AnchoredPosition: {x: 4, y: 127.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1231460457
@@ -484,8 +484,8 @@ MonoBehaviour:
 
     oxygen deprivation.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c21f0ed30a0211a45919fea782adbc0a, type: 2}
-  m_sharedMaterial: {fileID: 3992802480741062719, guid: c21f0ed30a0211a45919fea782adbc0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c2f430e6eb185c478f0360292a9a621, type: 2}
+  m_sharedMaterial: {fileID: 6579052368333939802, guid: 4c2f430e6eb185c478f0360292a9a621, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

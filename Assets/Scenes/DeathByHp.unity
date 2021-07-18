@@ -484,8 +484,8 @@ MonoBehaviour:
 
     lethal collisions.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c21f0ed30a0211a45919fea782adbc0a, type: 2}
-  m_sharedMaterial: {fileID: 3992802480741062719, guid: c21f0ed30a0211a45919fea782adbc0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4c2f430e6eb185c478f0360292a9a621, type: 2}
+  m_sharedMaterial: {fileID: 6579052368333939802, guid: 4c2f430e6eb185c478f0360292a9a621, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
