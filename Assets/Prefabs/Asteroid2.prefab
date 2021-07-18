@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6536776083769171688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.391, y: 3.761, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -158,6 +158,6 @@ MonoBehaviour:
   rb2d: {fileID: 5117363886407529145, guid: 09e4dac0f02cf204685af2f56faf70b1, type: 3}
   minRotationSpeed: 5
   maxRotationSpeed: 170
-  minMovementSpeed: 0.75
-  maxMovementSpeed: 1.5
+  minMovementSpeed: 0.5
+  maxMovementSpeed: 1
   value: 24

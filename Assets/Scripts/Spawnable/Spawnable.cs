@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D), typeof(Rigidbody2D))]
 public class Spawnable : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D rb2d;
+    [SerializeField] private Rigidbody2D rb2d;  // TODO: Unneeded?
 
     [SerializeField] private float minRotationSpeed, maxRotationSpeed;
     [SerializeField] private float minMovementSpeed, maxMovementSpeed;

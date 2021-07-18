@@ -28,8 +28,8 @@ public class SpawnableManager : MonoBehaviour
         // figure out spawn position
         Vector2 randUnitCircle = Random.insideUnitCircle.normalized;
 
-        float xPos = randUnitCircle.x * Random.Range(minSpawnDistance, maxSpawnDistance);
-        float yPos = randUnitCircle.y * Random.Range(minSpawnDistance, maxSpawnDistance);
+        float xPos = playerTransform.position.x + randUnitCircle.x * Random.Range(minSpawnDistance, maxSpawnDistance);
+        float yPos = playerTransform.position.y + randUnitCircle.y * Random.Range(minSpawnDistance, maxSpawnDistance);
 
         Vector2 position = new Vector2(xPos, yPos);
 

@@ -12,10 +12,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float lowO2Theshold = 30f;
 
     [SerializeField] private float o2UseInterval;
-    private float o2useTimer;
+    private float o2useTimer = 0;
 
     [SerializeField] private float hpRegenInterval;
-    private float hpRegenTimer;
+    private float hpRegenTimer = 0;
 
     // health
     [SerializeField] private Image hpImage;
@@ -68,8 +68,8 @@ public class Player : MonoBehaviour
 
         if (o2useTimer >= o2UseInterval)
         {
-            o2UseInterval = 0f;
-            o2 -= 0.01f;
+            o2useTimer = 0f;
+            o2 -= 0.1f;
             if (o2Image != null) o2Image.fillAmount = o2 / 150f;
 
             if (o2 < lowO2Theshold)
@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
         }
         if (!isDead && hpRegenTimer >= hpRegenInterval)
         {
-            hpRegenInterval = 0f;
+            hpRegenTimer = 0f;
             hp += 0.005f;
             if (hpImage != null) hpImage.fillAmount = hp / MAX_HP;
 
