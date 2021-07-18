@@ -49,6 +49,9 @@ TagManager:
   - name: Background
     uniqueID: 1097326459
     locked: 0
+  - name: Wrecks
+    uniqueID: 2208778183
+    locked: 0
   - name: BG UI
     uniqueID: 2776850619
     locked: 0

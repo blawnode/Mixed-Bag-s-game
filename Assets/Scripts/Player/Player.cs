@@ -14,9 +14,13 @@ public class Player : MonoBehaviour
     [SerializeField] private float o2UseInterval;
     private float o2useTimer;
 
+    [SerializeField] private float hpRegenInterval;
+    private float hpRegenTimer;
+
     // health
     [SerializeField] private Image hpImage;
     private float hp = 100f;
+    private const float MAX_HP = 100f;
 
     private bool isDead = false;
 
@@ -58,6 +62,7 @@ public class Player : MonoBehaviour
 
         time += Time.deltaTime;
         o2useTimer += Time.deltaTime;
+        hpRegenTimer += Time.deltaTime;
 
         if(timeText != null) timeText.text = "Time: " + Mathf.FloorToInt(time).ToString() + 's';
 
@@ -70,7 +75,7 @@ public class Player : MonoBehaviour
             if (o2 < lowO2Theshold)
                 AudioManager.i.Play(AudioManager.AudioName.LowO2Alert);
 
-            if ((o2 <= 0f || hp <= 0f) && !isDead)
+            if (o2 <= 0f && !isDead)
             {
                 isDead = true;
                 AudioManager.i.Play(AudioManager.AudioName.Death);
@@ -81,11 +86,36 @@ public class Player : MonoBehaviour
                     Debug.LogError("Failed to find SceneLoader");
 
                 SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
-
-                if (hp <= 0f)
-                    loader.LoadScene("DeathByHp");
+                
                 if (o2 <= 0f)
                     loader.LoadScene("DeathByO2");
+            }
+        }
+
+        if (hp <= 0f && !isDead)
+        {
+            isDead = true;
+            AudioManager.i.Play(AudioManager.AudioName.Death);
+
+            GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
+
+            if (!loaderObject)
+                Debug.LogError("Failed to find SceneLoader");
+
+            SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
+
+            if (hp <= 0f)
+                loader.LoadScene("DeathByHp");
+        }
+        if (!isDead && hpRegenTimer >= hpRegenInterval)
+        {
+            hpRegenInterval = 0f;
+            hp += 0.005f;
+            if (hpImage != null) hpImage.fillAmount = hp / MAX_HP;
+
+            if (hp > MAX_HP)
+            {
+                hp = MAX_HP;
             }
         }
 

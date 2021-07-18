@@ -42,6 +42,7 @@ public class AudioManager : MonoBehaviour
         ScreenFadeIn,
         ScreenFadeOut,
         MediumCollision,
+        RemovedO2Spawn,
     }
 
     public enum MusicName
