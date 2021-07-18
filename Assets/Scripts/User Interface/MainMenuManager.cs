@@ -18,17 +18,6 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-    public void OnMainMenuBtnPlay()
-    {
-        GameObject loaderObject = GameObject.FindWithTag("SceneLoader");
-
-        if (!loaderObject)
-            Debug.LogError("Failed to find SceneLoader");
-
-        SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
-        loader.LoadScene("Game");
-    }
-
     public void OnMainMenuBtnSettings()
     {
         mainMenu.SetActive(false);

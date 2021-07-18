@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private Animator transition;
-    [SerializeField] private Animator deathTransition;
 
     public void LoadScene(int index)
     {
@@ -16,25 +15,6 @@ public class SceneLoader : MonoBehaviour
     public void LoadScene(string name)
     {
         StartCoroutine(LoadSceneCoroutine(name));
-    }
-
-    public void LoadDeathScene()
-    {
-        deathTransition.SetTrigger("Start");
-    }
-
-    public void LoadSceneFromDeath()
-    {
-        StartCoroutine(LoadSceneFromDeathCoroutine());
-    }
-
-    private IEnumerator LoadSceneFromDeathCoroutine()
-    {
-        deathTransition.SetTrigger("End");
-
-        yield return new WaitForSeconds(1f);
-
-        SceneManager.LoadScene("Game");
     }
 
     private IEnumerator LoadSceneCoroutine(int index)
