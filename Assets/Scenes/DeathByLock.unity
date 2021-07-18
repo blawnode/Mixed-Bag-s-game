@@ -480,9 +480,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'You have
 
-    died by
+    locked your
 
-    oxygen deprivation.'
+    escape pad.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c21f0ed30a0211a45919fea782adbc0a, type: 2}
   m_sharedMaterial: {fileID: 3992802480741062719, guid: c21f0ed30a0211a45919fea782adbc0a, type: 2}
