@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.Experimental.Rendering.Universal;
 
 public class Player : MonoBehaviour
@@ -18,6 +19,10 @@ public class Player : MonoBehaviour
     private float hp = 100f;
 
     private bool isDead = false;
+
+    // time
+    [SerializeField] private TextMeshProUGUI timeText;
+    private float time = 0f;
 
     // camera
     [SerializeField] private PlayerCamera playerCamera;
@@ -51,7 +56,11 @@ public class Player : MonoBehaviour
         if (isDead)
             return;
 
+        time += Time.deltaTime;
         o2useTimer += Time.deltaTime;
+
+        timeText.text = "Time: " + Mathf.FloorToInt(time).ToString() + 's';
+
         if (o2useTimer >= o2UseInterval)
         {
             o2UseInterval = 0f;
