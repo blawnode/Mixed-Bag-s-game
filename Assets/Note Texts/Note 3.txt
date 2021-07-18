@@ -1,0 +1,27 @@
+[AUDIO TRANSMISSION LOG]
+
+<BEGIN LOG>
+
+(Dr. Leon H.): Oh, Mrs. Ochoa, could I use your assistance for a moment?
+(Elsa O.): Whatcha need, Doctor Haise?
+(Dr. Leon H.): I was working in the Medbay, and I happened to find a--
+(Elsa O.): You got another paper cut or somethin'? Haha!
+(Elsa O.): I'm only kiddin', go ahead.
+(Dr. Leon H.): Hah--yes, well, I came across a strange phenomenon while running diagnostics on
+(Dr. Leon H.): the quality of life aboard this vessel, and I would like to confirm my findings with you.
+(Elsa O.): Oh? Well, go on and tell me about it.
+(Dr. Leon H.): As you can see here there's a--
+
+[LOUD BLARING ALARM]
+
+(Dr. Leon H.): ...
+(Elsa O.): ...
+(Dr. Leon H.): Mrs. Ochoa?
+(Elsa O.): Shit.
+(Dr. Leon H.): Are you alright?
+(Elsa O.): We need to get to communications.
+(Else O.): NOW!
+
+[LOUD RUMBLING IN THE BACKGROUND]
+
+<END LOG>

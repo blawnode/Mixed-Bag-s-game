@@ -69,6 +69,7 @@ public class CodePanelManager : MonoBehaviour
             Camera.main.gameObject.SetActive(false);
             player.SetActive(false);
             ggCamera.gameObject.SetActive(true);
+            AudioManager.i.StopMusic();
         }
     }
 }

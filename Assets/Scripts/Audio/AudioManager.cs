@@ -43,6 +43,7 @@ public class AudioManager : MonoBehaviour
         ScreenFadeOut,
         MediumCollision,
         RemovedO2Spawn,
+        EscapePodLaunch
     }
 
     public enum MusicName
@@ -78,7 +79,14 @@ public class AudioManager : MonoBehaviour
     public void PlayMusic(MusicName name)
     {
         currentMusicSource.clip = GetAudioClipMusic(name);
+        if (name == MusicName.Death) currentMusicSource.loop = false;
+        else currentMusicSource.loop = true;
         currentMusicSource.Play();
+    }
+    
+    public void StopMusic()
+    {
+        currentMusicSource.Stop();
     }
 
     private AudioClip GetAudioClip(AudioName name)

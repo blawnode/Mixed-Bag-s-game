@@ -3,17 +3,19 @@ using UnityEngine;
 public class Note : MonoBehaviour
 {
     [SerializeField] protected string text;
+    [SerializeField] protected TextAsset textAsset;
     [SerializeField] protected GameObject noteScreen;
     [SerializeField] protected TMPro.TextMeshProUGUI noteScreenText;
     [SerializeField] protected NoteReadingManager noteReadingManager;
+    [SerializeField] protected Sprite bigNoteImage;
 
     public void Open()
     {
         Time.timeScale = 0;
-        noteScreenText.text = text;
+        noteScreenText.text = textAsset.text;
         noteScreen.GetComponent<Animator>().Play("Enter");
         noteReadingManager.SetNote(this);
-        NoteCounter.noteCount += 1;
+        noteReadingManager.SetImage(bigNoteImage);
     }
 
     public void Close()

@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
     [SerializeField] private CodePanelManager codePanelManager;
 
     [System.NonSerialized] public bool isUsingUI = false;
+    [System.NonSerialized] public bool canOpenPod = false;
 
     private void Start()
     {
@@ -176,7 +177,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D c2d)
     {
-        if (c2d.CompareTag("EscapePod") && Input.GetKeyDown(KeyCode.Space))
+        if (canOpenPod && c2d.CompareTag("EscapePod") && Input.GetKeyDown(KeyCode.Space))
         {
             codePanelManager.OpenPanel();
             Time.timeScale = 0;

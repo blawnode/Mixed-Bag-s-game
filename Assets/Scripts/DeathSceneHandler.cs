@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DeathSceneHandler : MonoBehaviour
 {
+    //[SerializeField] bool thisIsWinScene = false;
     private void Update()
     {
         if (Input.anyKey)
@@ -14,7 +13,9 @@ public class DeathSceneHandler : MonoBehaviour
                 Debug.LogError("Failed to find SceneLoader");
 
             SceneLoader loader = loaderObject.GetComponent<SceneLoader>();
-            loader.LoadScene("Game (with map)");
+            /*if (thisIsWinScene)*/ loader.LoadScene("Main Menu Scene");
+            /*else
+                loader.LoadScene("Game (with map)");*/
         }
     }
 }
