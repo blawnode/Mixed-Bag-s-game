@@ -49,8 +49,9 @@ public class SceneLoader : MonoBehaviour
     {
         transition.SetTrigger("Start");
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
 
+        Time.timeScale = 1;
         SceneManager.LoadScene(name);
     }
 

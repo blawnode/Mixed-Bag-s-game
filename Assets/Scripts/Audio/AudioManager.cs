@@ -88,6 +88,16 @@ public class AudioManager : MonoBehaviour
     {
         currentMusicSource.Stop();
     }
+    
+    public void PauseMusic()
+    {
+        currentMusicSource.Pause();
+    }
+    
+    public void UnPauseMusic()
+    {
+        currentMusicSource.UnPause();
+    }
 
     private AudioClip GetAudioClip(AudioName name)
     {

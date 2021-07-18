@@ -125,7 +125,7 @@ public class Player : MonoBehaviour
         }
 
         float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
-        flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
+        if (!isUsingUI) flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
 
         //Debug.Log(angle);
 
