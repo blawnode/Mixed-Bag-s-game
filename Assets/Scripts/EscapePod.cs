@@ -3,6 +3,7 @@ using UnityEngine;
 public class EscapePod : MonoBehaviour
 {
     [SerializeField] SceneLoader sceneLoader;
+    private bool isFlying = false;
 
     public void BeOpen()
     {
@@ -11,7 +12,12 @@ public class EscapePod : MonoBehaviour
 
     public void StartFlying()
     {
-        GetComponent<Animator>().Play("Motion");
+        if (!isFlying)
+        {
+            GetComponent<Animator>().Play("Motion");
+            AudioManager.i.Play(AudioManager.AudioName.EscapePodLaunch);
+            isFlying = true;
+        }
     }
 
     // Animator event

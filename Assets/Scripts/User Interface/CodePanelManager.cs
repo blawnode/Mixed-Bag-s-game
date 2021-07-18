@@ -19,6 +19,7 @@ public class CodePanelManager : MonoBehaviour
     public void OpenPanel()
     {
         numCodeScreen.Play("Enter");
+        AudioManager.i.Play(AudioManager.AudioName.OpenPanel);
         player.GetComponent<Player>().isUsingUI = true;
     }
 
@@ -26,6 +27,7 @@ public class CodePanelManager : MonoBehaviour
     {
         numCodeScreen.Play("Leave");
         Time.timeScale = 1;
+        AudioManager.i.Play(AudioManager.AudioName.OpenPanel);
         player.GetComponent<Player>().isUsingUI = false;
     }
 
@@ -38,6 +40,7 @@ public class CodePanelManager : MonoBehaviour
             currentCode[digitNo - 1] = 0;
         }
         digits[digitNo - 1].text = currentCode[digitNo - 1].ToString();
+        AudioManager.i.Play(AudioManager.AudioName.CodeButtonPress);
     }
 
     // digitIndex is from 1 to 5
@@ -49,6 +52,7 @@ public class CodePanelManager : MonoBehaviour
             currentCode[digitNo - 1] = 9;
         }
         digits[digitNo - 1].text = currentCode[digitNo - 1].ToString();
+        AudioManager.i.Play(AudioManager.AudioName.CodeButtonPress);
     }
 
     public void OnBtnSubmit()
@@ -76,6 +80,7 @@ public class CodePanelManager : MonoBehaviour
             Camera.main.gameObject.SetActive(false);
             player.SetActive(false);
             ggCamera.gameObject.SetActive(true);
+            AudioManager.i.Play(AudioManager.AudioName.CodeCorrect);
             AudioManager.i.StopMusic();
         }
         else
@@ -89,6 +94,7 @@ public class CodePanelManager : MonoBehaviour
             {
                 mistakeLeds[mistakeCount - 1].enabled = true;
             }
+            AudioManager.i.Play(AudioManager.AudioName.CodeMistake);
         }
     }
 }

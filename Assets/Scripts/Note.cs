@@ -16,12 +16,14 @@ public class Note : MonoBehaviour
         noteScreen.GetComponent<Animator>().Play("Enter");
         noteReadingManager.SetNote(this);
         noteReadingManager.SetImage(bigNoteImage);
+        AudioManager.i.Play(AudioManager.AudioName.NoteRead);
     }
 
     public void Close()
     {
         Time.timeScale = 1;
         noteScreen.GetComponent<Animator>().Play("Leave");
+        AudioManager.i.Play(AudioManager.AudioName.NoteClose);
         Destroy(gameObject);
     }
 

@@ -43,7 +43,12 @@ public class AudioManager : MonoBehaviour
         ScreenFadeOut,
         MediumCollision,
         RemovedO2Spawn,
-        EscapePodLaunch
+        EscapePodLaunch,
+        EscapePodOpen,
+        CodeMistake,
+        CodeCorrect,
+        OpenPanel,
+        CodeButtonPress,
     }
 
     public enum MusicName
@@ -72,6 +77,7 @@ public class AudioManager : MonoBehaviour
 
         AudioSource source = soundGameObject.AddComponent<AudioSource>();
         source.clip = GetAudioClip(name);
+        if (name == AudioName.EscapePodLaunch) source.loop = false;
 
         source.Play();
     }
@@ -88,7 +94,7 @@ public class AudioManager : MonoBehaviour
     {
         currentMusicSource.Stop();
     }
-    
+
     public void PauseMusic()
     {
         currentMusicSource.Pause();

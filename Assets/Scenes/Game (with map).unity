@@ -500,6 +500,7 @@ MonoBehaviour:
   noteText: {fileID: 59426682}
   noteCount: 0
   escapePod: {fileID: 1218548967}
+  neededNoteAmount: 8
 --- !u!114 &28836846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7679,6 +7680,7 @@ MonoBehaviour:
   noteText: {fileID: 59426682}
   noteCount: 0
   escapePod: {fileID: 0}
+  neededNoteAmount: 8
 --- !u!1 &838562076
 GameObject:
   m_ObjectHideFlags: 0
@@ -8610,11 +8612,11 @@ PrefabInstance:
       objectReference: {fileID: 863681752}
     - target: {fileID: 6029703591754017656, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
       propertyPath: speed.x
-      value: 8
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6029703591754017656, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
       propertyPath: speed.y
-      value: 8
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6029703591754017656, guid: 529e524451f7e4c4a88cf8d0ce289aa3, type: 3}
       propertyPath: timeText
@@ -9071,7 +9073,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5302614381607845078, guid: 465f93ace770fd749abae71726174728, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5302614382592876513, guid: 465f93ace770fd749abae71726174728, type: 3}
       propertyPath: m_fontSize
@@ -10613,7 +10615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1135512156
 RectTransform:
   m_ObjectHideFlags: 0

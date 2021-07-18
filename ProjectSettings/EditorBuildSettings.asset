@@ -6,15 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ivorii test.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 8f1b03b833c984141a8f190c170998d5
+    path: Assets/Scenes/Main Menu Scene.unity
+    guid: aad1c0a56791d9a448d1d6e57040a1c9
   - enabled: 1
     path: Assets/Scenes/DeathByO2.unity
     guid: 9ce58cb596629ef42a596b2c206f015f
   - enabled: 1
     path: Assets/Scenes/Game (with map).unity
     guid: 4e1e19d9fdd91514d888dacf08348367
+  - enabled: 1
+    path: Assets/Scenes/DeathByHp.unity
+    guid: d52aed43b9baa9d4cb146c4f2f72197a
+  - enabled: 1
+    path: Assets/Scenes/Finish.unity
+    guid: 595e59750caee5245bf5cf227c2dcebb
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: f8403bfc188adf440824c53bd4b21620
+  - enabled: 1
+    path: Assets/Scenes/DeathByLock.unity
+    guid: 55d0ec632ed30974f85e69aa3611475d
   m_configObjects: {}
