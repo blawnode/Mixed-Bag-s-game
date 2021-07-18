@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 5075044747442006745}
   - component: {fileID: -1463811899857429114}
   m_Layer: 0
-  m_Name: battery
-  m_TagString: SceneLoader
+  m_Name: o2tank
+  m_TagString: Oxygen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 5117363886407529145, guid: 09e4dac0f02cf204685af2f56faf70b1, type: 3}
   minRotationSpeed: 5
-  maxRotationSpeed: 180
-  minMovementSpeed: 1.5
-  maxMovementSpeed: 2
+  maxRotationSpeed: 120
+  minMovementSpeed: 0.5
+  maxMovementSpeed: 1
   value: 85

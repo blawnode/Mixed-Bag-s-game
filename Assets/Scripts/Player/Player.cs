@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
         float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
         flashlight.transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        Debug.Log(flashlight.transform.rotation);
+        Debug.Log(angle);
 
         if (Input.GetMouseButtonDown(0))
             ToggleFlashlight();
@@ -110,28 +110,34 @@ public class Player : MonoBehaviour
         // Animations
         float normalizedTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
         string chosenStateName = "";
-        if (movement.x > 0)
+        float angle = Mathf.Rad2Deg * Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
+        if (angle <= 90f && angle >= -30f)
         {
+            flashlight.transform.localPosition = new Vector2(0.17f, 0.02f);
+
             if (light2d.enabled)
                 chosenStateName = "Flash E";
             else chosenStateName = "Idle E";
         }
-        else if (movement.x < 0)
+        else if ((angle > 90f && angle <= 180f) || angle <= -120)
         {
+            flashlight.transform.localPosition = new Vector2(-0.17f, -0.02f);
+
             if (light2d.enabled)
                 chosenStateName = "Flash W";
             else chosenStateName = "Idle W";
         }
         else
         {
+            flashlight.transform.localPosition = new Vector2(-0.09f, 0f);
+
             if (light2d.enabled)
                 chosenStateName = "Flash S";
             else chosenStateName = "Idle S";
         }
+
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName(chosenStateName))
-        {
             animator.Play(chosenStateName, -1, normalizedTime);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D c2d)
