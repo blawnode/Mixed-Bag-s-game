@@ -45,8 +45,23 @@ public class AudioManager : MonoBehaviour
         MediumCollision,
     }
 
+    public enum MusicName
+    {
+        MainMenu,
+        Game,
+        Death,
+        Finish,
+    }
+
+    private AudioSource currentMusicSource = null;
+
     private void Initialize()
     {
+        GameObject soundGameObject = new GameObject("Sound");
+        DontDestroyOnLoad(soundGameObject);
+
+        currentMusicSource = soundGameObject.AddComponent<AudioSource>();
+        currentMusicSource.clip = null;
     }
 
     public void Play(AudioName name)
@@ -60,9 +75,27 @@ public class AudioManager : MonoBehaviour
         source.Play();
     }
 
+    public void PlayMusic(MusicName name)
+    {
+        currentMusicSource.clip = GetAudioClipMusic(name);
+        currentMusicSource.Play();
+    }
+
     private AudioClip GetAudioClip(AudioName name)
     {
         foreach(GameAssets.AudioClipToken token in GameAssets.i.audioClips)
+        {
+            if (token.name == name)
+                return token.clip;
+        }
+
+        Debug.LogError("Failed to find audio with name: " + name);
+        return null;
+    }
+
+    private AudioClip GetAudioClipMusic(MusicName name)
+    {
+        foreach (GameAssets.AudioClipMusicToken token in GameAssets.i.audioClipsMusic)
         {
             if (token.name == name)
                 return token.clip;

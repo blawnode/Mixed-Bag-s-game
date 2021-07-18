@@ -25,5 +25,13 @@ public class GameAssets : MonoBehaviour
         public AudioClip clip;
     }
 
+    [System.Serializable]
+    public struct AudioClipMusicToken
+    {
+        public AudioManager.MusicName name;
+        public AudioClip clip;
+    }
+
     public AudioClipToken[] audioClips;
+    public AudioClipMusicToken[] audioClipsMusic;
 }

@@ -7,6 +7,25 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private Animator transition;
 
+    private void Start()
+    {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Main Menu Scene":
+                AudioManager.i.PlayMusic(AudioManager.MusicName.MainMenu);
+                break;
+            case "Game":
+                AudioManager.i.PlayMusic(AudioManager.MusicName.Game);
+                break;
+            case "Death":
+                AudioManager.i.PlayMusic(AudioManager.MusicName.Death);
+                break;
+            case "Finish":
+                AudioManager.i.PlayMusic(AudioManager.MusicName.Finish);
+                break;
+        }
+    }
+
     public void LoadScene(int index)
     {
         StartCoroutine(LoadSceneCoroutine(index));
