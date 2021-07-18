@@ -12,8 +12,8 @@ public class PlayerCamera : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 normalized = (target.position - Camera.main.ScreenToWorldPoint(Input.mousePosition)).normalized;
-        transform.position = Vector3.SmoothDamp(transform.position, target.position - (Vector3)(normalized * maxOffsetLength), ref velocity, smoothTime);
-        transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        Vector2 newPos = Vector3.SmoothDamp(transform.position, target.position - (Vector3)(normalized * maxOffsetLength), ref velocity, smoothTime);
+        transform.position = new Vector3(normalized.x, normalized.y, transform.position.z);
     }
 
 }
