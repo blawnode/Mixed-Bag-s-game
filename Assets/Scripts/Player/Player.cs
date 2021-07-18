@@ -3,8 +3,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private AudioClip batteryPickup;
-
     // battery
     [SerializeField] private UnityEngine.UI.Slider batterySlider;
 
@@ -22,9 +20,11 @@ public class Player : MonoBehaviour
     // movement
     [SerializeField] private Vector2 speed = new Vector2(50f, 50f);
 
+    // flashlight
     [SerializeField] private GameObject flashlight;
-    private bool isFlashlightOn = false;
+    [SerializeField] private Light2D light2d;
 
+    // breath
     private bool isBreathingIn = true;  // false -> breathing out. Used by Breathe(), which's used by the animator
     private float lastBreatheTime = 0;
     private float breatheCooldownTime = 0.3f;
@@ -35,8 +35,10 @@ public class Player : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        if (flashlight == null) Debug.LogWarning("Flashlight expected.");
-        if (animator == null) Debug.LogWarning("Animator expected.");
+        if (flashlight == null) Debug.LogError("Flashlight expected");
+        if (light2d == null) Debug.LogError("Light2D expected");
+        if (animator == null) Debug.LogError("Animator expected");
+
     }
 
     private void Update()
@@ -99,19 +101,19 @@ public class Player : MonoBehaviour
             string chosenStateName = "";
             if (movement.x > 0)
             {
-                if (isFlashlightOn)
+                if (light2d.enabled)
                     chosenStateName = "Flash E";
                 else chosenStateName = "Idle E";
             }
             else if (movement.x < 0)
             {
-                if (isFlashlightOn)
+                if (light2d.enabled)
                     chosenStateName = "Flash W";
                 else chosenStateName = "Idle W";
             }
             else
             {
-                if (isFlashlightOn)
+                if (light2d.enabled)
                     chosenStateName = "Flash S";
                 else chosenStateName = "Idle S";
             }
@@ -171,7 +173,7 @@ public class Player : MonoBehaviour
 
     private void ToggleFlashlight()
     {
-        isFlashlightOn = !isFlashlightOn;
-        flashlight.GetComponentInChildren<Light2D>().enabled = isFlashlightOn;
+        light2d.enabled = !light2d.enabled;
+        // flashlight.GetComponentInChildren<Light2D>().enabled = isFlashlightOn;
     }
 }

@@ -14,7 +14,7 @@ public class SceneLoader : MonoBehaviour
             case "Main Menu Scene":
                 AudioManager.i.PlayMusic(AudioManager.MusicName.MainMenu);
                 break;
-            case "Game":
+            case "Game (with map)":
                 AudioManager.i.PlayMusic(AudioManager.MusicName.Game);
                 break;
             case "Death":
