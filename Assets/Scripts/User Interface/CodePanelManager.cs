@@ -8,9 +8,13 @@ public class CodePanelManager : MonoBehaviour
     int[] currentCode = { 0, 0, 0, 0, 0 };
     [SerializeField] Animator numCodeScreen;
 
+    [SerializeField] UnityEngine.UI.Image[] mistakeLeds;
+    int mistakeCount = 0;
+
     [SerializeField] Animator escapePod;
     [SerializeField] GameObject player;
     [SerializeField] Camera ggCamera;
+    [SerializeField] SceneLoader sceneLoader;
 
     public void OpenPanel()
     {
@@ -34,7 +38,6 @@ public class CodePanelManager : MonoBehaviour
             currentCode[digitNo - 1] = 0;
         }
         digits[digitNo - 1].text = currentCode[digitNo - 1].ToString();
-        CheckCode();
     }
 
     // digitIndex is from 1 to 5
@@ -46,6 +49,10 @@ public class CodePanelManager : MonoBehaviour
             currentCode[digitNo - 1] = 9;
         }
         digits[digitNo - 1].text = currentCode[digitNo - 1].ToString();
+    }
+
+    public void OnBtnSubmit()
+    {
         CheckCode();
     }
 
@@ -70,6 +77,18 @@ public class CodePanelManager : MonoBehaviour
             player.SetActive(false);
             ggCamera.gameObject.SetActive(true);
             AudioManager.i.StopMusic();
+        }
+        else
+        {
+            mistakeCount++;
+            if(mistakeCount == 5)
+            {
+                sceneLoader.LoadScene("DeathByLock");
+            }
+            else
+            {
+                mistakeLeds[mistakeCount - 1].enabled = true;
+            }
         }
     }
 }
